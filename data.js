@@ -19,7 +19,7 @@ window.CV = {
   stats: [
     { value: "15+", label: "years building software" },
     { value: "PhD", label: "candidate, informatics" },
-    { value: "5", label: "companies, from CTO to team lead" },
+    { value: "5", label: "companies" },
   ],
 
   experience: [
@@ -106,15 +106,6 @@ window.CV = {
     { group: "Cloud & DevOps", items: ["AWS (ECS, ECR)", "Azure AKS", "Helm", "Docker", "Microservices", "Gitflow"] },
     { group: "Databases", items: ["PostgreSQL", "MySQL", "Oracle", "SQL Server", "SAP HANA", "Elasticsearch", "MongoDB"] },
     { group: "App servers", items: ["WildFly", "JBoss", "Tomcat", "Nginx"] },
-  ],
-
-  projects: [
-    { name: "jpa-soft-delete-spring-boot-starter", desc: "Spring Boot starter that adds soft-delete support to JPA entities.", lang: "Java", url: "https://github.com/ngoch/jpa-soft-delete-spring-boot-starter" },
-    { name: "docker-oracle-12c", desc: "Docker image for running an Oracle Database 12c.", lang: "Dockerfile", url: "https://github.com/ngoch/docker-oracle-12c" },
-    { name: "dockerfiles", desc: "A collection of Dockerfiles for everyday dev environments.", lang: "Docker", url: "https://github.com/ngoch/dockerfiles" },
-    { name: "saiku-patch", desc: "Patches for the Saiku OLAP analytics platform.", lang: "Java", url: "https://github.com/ngoch/saiku-patch" },
-    { name: "odftoolkit-performance-test", desc: "Performance tests for the Apache ODF Toolkit.", lang: "Java", url: "https://github.com/ngoch/odftoolkit-performance-test" },
-    { name: "DMS-2013", desc: "OWA-type aggregation operators for an intelligent decision-making system.", lang: "C#", url: "https://github.com/ngoch/DMS-2013" },
   ],
 
   social: [

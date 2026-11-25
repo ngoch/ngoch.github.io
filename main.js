@@ -39,14 +39,6 @@
       <div class="tags">${g.items.map((i) => `<span>${esc(i)}</span>`).join("")}</div>
     </div>`).join("");
 
-  $("#projects-list").innerHTML = cv.projects.map((p) => `
-    <a class="project reveal" href="${esc(p.url)}" target="_blank" rel="noopener">
-      <div class="p-top mono"><span class="folder">▸ repo</span><span class="arrow">↗</span></div>
-      <h4>${esc(p.name)}</h4>
-      <p>${esc(p.desc)}</p>
-      <span class="lang mono">${esc(p.lang)}</span>
-    </a>`).join("");
-
   const links = [...cv.social];
   if (cv.email) links.unshift({ label: cv.email, url: `mailto:${cv.email}` });
   $("#social").innerHTML = links.map((s) => `<a class="btn" href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>`).join("");
