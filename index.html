@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nikoloz Gochiashvili, Software Architect</title>
+  <meta name="description" content="Nikoloz Gochiashvili is a software architect and CTO in Tbilisi, Georgia, working on enterprise systems, Java EE and AI." />
+  <meta property="og:title" content="Nikoloz Gochiashvili, Software Architect" />
+  <meta property="og:description" content="Enterprise software, Java EE, and a deep curiosity for AI." />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/2676940?s=460&v=4" />
+  <meta name="theme-color" content="#0b0f14" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="data.js"></script>
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="brand" href="#top"><span class="prompt">~/</span><span data-bind="handle"></span><span class="caret">_</span></a>
+    <nav>
+      <a href="#about"><i>01</i>about</a>
+      <a href="#experience"><i>02</i>experience</a>
+      <a href="#skills"><i>03</i>stack</a>
+      <a href="#projects"><i>04</i>projects</a>
+      <a href="#contact"><i>05</i>contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-text">
+        <p class="mono dim">$ whoami</p>
+        <h1 data-bind="name"></h1>
+        <p class="typed mono"><span class="accent">&gt;</span> <span id="typed"></span><span class="cursor"></span></p>
+        <p class="meta mono">
+          <span>📍 <span data-bind="location"></span></span>
+          <span id="currently"></span>
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="#experience">View résumé</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="terminal" aria-hidden="true">
+        <div class="term-bar"><span></span><span></span><span></span><em>nikoloz.json</em></div>
+        <pre id="term"></pre>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2><span class="num">01.</span> about</h2>
+      <div class="about">
+        <div class="about-text" id="about-text"></div>
+        <figure class="avatar"><img id="avatar" alt="Portrait of Nikoloz Gochiashvili" width="280" height="280" /></figure>
+      </div>
+      <div class="stats" id="stats"></div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2><span class="num">02.</span> experience</h2>
+      <ol class="timeline" id="experience-list"></ol>
+      <h3 class="sub mono">// education</h3>
+      <ol class="timeline edu" id="education-list"></ol>
+    </section>
+
+    <section id="skills" class="section">
+      <h2><span class="num">03.</span> stack</h2>
+      <div class="skills" id="skills-list"></div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2><span class="num">04.</span> projects</h2>
+      <div class="projects" id="projects-list"></div>
+      <p class="more mono"><a href="https://github.com/ngoch" target="_blank" rel="noopener">→ see all on github</a></p>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2><span class="num">05.</span> contact</h2>
+      <p class="lead">Open to interesting problems, architecture conversations, and good beer in Tbilisi.</p>
+      <div class="social" id="social"></div>
+    </section>
+  </main>
+
+  <footer class="mono dim">© <span id="year"></span> <span data-bind="name"></span>. Built from scratch.</footer>
+</body>
+</html>
